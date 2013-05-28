@@ -1,0 +1,66 @@
+object FrameToolButton: TFrameToolButton
+  Left = 0
+  Top = 0
+  Width = 204
+  Height = 142
+  TabOrder = 0
+  object plMain: TPanel
+    Left = 0
+    Top = 0
+    Width = 204
+    Height = 142
+    Align = alClient
+    BevelOuter = bvNone
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    ExplicitLeft = 72
+    ExplicitTop = 48
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object ilDisable: TImage
+      Left = 0
+      Top = 0
+      Width = 204
+      Height = 142
+      Align = alClient
+      Center = True
+      Visible = False
+      ExplicitLeft = 72
+      ExplicitTop = 48
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object ilMain: TImage
+      Left = 0
+      Top = 0
+      Width = 204
+      Height = 142
+      Align = alClient
+      Center = True
+      OnMouseDown = ilMainMouseDown
+      OnMouseEnter = ilMainMouseEnter
+      OnMouseLeave = ilMainMouseLeave
+      OnMouseUp = ilMainMouseUp
+      ExplicitLeft = 72
+      ExplicitTop = 64
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object plCaption: TPanel
+      Left = 204
+      Top = 0
+      Width = 0
+      Height = 142
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 0
+      Visible = False
+      OnMouseDown = ilMainMouseDown
+      OnMouseEnter = ilMainMouseEnter
+      OnMouseLeave = ilMainMouseLeave
+      OnMouseUp = ilMainMouseUp
+      ExplicitLeft = 144
+    end
+  end
+end
